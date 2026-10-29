@@ -1,0 +1,10 @@
+{
+  "zh": {
+    "name": "顶部导航整合",
+    "description": "把侧边栏的导航图标（流镜/更多/插件/自动化任务/MCP连接器）和底部快捷入口（插件市场/数据库）合并到顶部一条可缩放的导航栏。"
+  },
+  "en": {
+    "name": "Top Nav Unifier",
+    "description": "Merge the sidebar panel icons and footer quick actions into a single resizable top navigation bar."
+  }
+}

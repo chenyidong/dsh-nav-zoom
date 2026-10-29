@@ -1,0 +1,41 @@
+{
+  "name": "dsh-topnav-unifier",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Merge sidebar footer actions into the panel list, with a fold/expand toggle.",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": ["@deepseek-ai/dsh-client-ui-sidebar"]
+    },
+    "displayName": "顶部导航整合",
+    "description": "把侧边栏底部快捷入口合并到导航面板列表里，并可折叠/展开。",
+    "icon": "./icon.svg",
+    "locales": {
+      "zh": "./locale/zh.json",
+      "en": "./locale/en.json"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.0.5"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale/*.json"
+  ]
+}
